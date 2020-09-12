@@ -131,7 +131,7 @@ final class ExposuresElement: WideRowElement {
         container.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(margin.top)
             make.left.equalToSuperview().offset(margin.left)
-            make.right.equalTo(imageView.snp.left)
+            make.right.equalTo(imageView.snp.left).offset(-10)
             
             if button.isHidden {
                 make.bottom.equalToSuperview().offset(margin.bottom)
